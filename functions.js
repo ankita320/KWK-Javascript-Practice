@@ -1,5 +1,3 @@
-# KWK-Javascript-Practice
-javascript practice from KWK: functions, objects, arrays, dom
 //⭐️⭐️⭐️⭐️⭐️⭐️ Functions
 // 📗 Functions are ACTIONS in code that wait to be called on to perform the action
 
@@ -8,12 +6,20 @@ javascript practice from KWK: functions, objects, arrays, dom
 //    code goes here;
 //  }
 
+
+
 function doSomething () {
   var name = "Ankita";
   console.log(`Hello ${name}, how are you?`);
  } doSomething ()
 
- 
+
+
+
+
+
+
+
 
 
 // 📗 When we DECLARE a function, we tell it what its job is
@@ -23,6 +29,10 @@ function doSomething () {
  console.log("Put treats in pocket");
   console.log("Put poop bag in pocket");
 } walkDog(9);
+
+function eat(cupcakes) {
+  console.log(`I ate ${cupcakes} cupcakes today.`);
+} eat(3);
 
 
 // 📗 Writing a function doesn’t execute it. We have to CALL the function for it to take the action
@@ -66,6 +76,10 @@ function math(number) {
   console.log(number + 5);}
   math(7);
 
+  function maths(nums){
+    console.log(nums + 8);
+  }maths(10);
+
 
 
 // Medium Challenge 🌶🌶: write a function that takes in 2 arguments (numbers). Function console.log’s the sum of those numbers.
@@ -76,18 +90,41 @@ console.log(`sum of 5 + 9 = ${num1 + num2}`);
 sum(5 + 9)
 
 
-//function fizzbuzz(num)
-//{var num3 = number%3;
-//var num5 = num%5;
-//if (num3 === 0);
-//if (num5 === 0);
-//console.log ("FIZZBUZZ")
-//{else if console.log("FIZZ")}
-//{else if(num5 === 0)
-//console.log("BUZZ")}
-//{else {console.log(num)}
-//fizzbuzz(60); 
+function fizzbuzz(num){
+  if (num%3 === 0){
+    // CODE HERE
+    if (num%5 === 0){
+      // CODE HERE
+      console.log ("FIZZBUZZ");
+      } else  {
+      console.log("FIZZ");
+      }
+      } else if(num%5 === 0){
+    console.log("BUZZ");
+    } else {
+      console.log(num);
+  }
+  }
+fizzbuzz(60);
 
+
+
+function honeycomb(numb){
+  if (numb%4 === 0){
+    // CODE HERE
+    if (numb%6 === 0){
+      // CODE HERE
+      console.log ("HONEY");
+      } else  {
+      console.log("COMB");
+      }
+      } else if(num%4 === 0){
+    console.log("HONEYCOMB");
+    } else {
+      console.log(numb);
+  }
+  }
+honeycomb(192);
 
 
 
